@@ -28,6 +28,7 @@ window.addEventListener('scroll', () => {
 
 /* 메인 슬라이드 */
 const mainSlide = new Swiper(".slide_visual", {
+    slidesPerView: 1,
     loop: true,
     autoplay: {
         delay: 5500,

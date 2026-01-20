@@ -73,8 +73,8 @@ body.no_scroll {
     color: rgb(0, 0, 0);
     font-weight: 300;
     letter-spacing: 2px;
-    text-decoration: none;
-    margin-left: 100px;
+    margin: 0 auto;
+    /* margin-left: 100px; */
 }
 
 .inner img {
@@ -85,7 +85,6 @@ body.no_scroll {
 }
 
 header {
-
     width: 100%;
     background: rgba(255, 255, 255, 0.834);
     position: fixed;
@@ -180,26 +179,27 @@ header .right {
 }
 
 a.af {
-  height: 40px;
-  padding: 0 22px;
+    height: 40px;
+    padding: 0 22px;
 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-  font-size: 14px;
-  font-weight: 800;
+    font-size: 14px;
+    font-weight: 800;
 
-  color: #6AB9FA;
-  background-color: #ffffff;
+    color: #6AB9FA;
+    background-color: #ffffff;
 
-  border: 2px solid #6AB9FA;
-  border-radius: 999px; /* 완전 둥근 캡슐 */
+    border: 2px solid #6AB9FA;
+    border-radius: 999px;
+    /* 완전 둥근 캡슐 */
 
-  gap: 5px;
-  text-decoration: none;
+    gap: 5px;
+    text-decoration: none;
 
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a.af::after {
@@ -377,9 +377,11 @@ main .article_top .more span {
 main .main_visual {
     padding-top: 100px;
     height: 100vh;
+
 }
 
 main .main_visual .inner {
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -391,12 +393,13 @@ main .main_visual .slide_visual {
     flex: 1;
     border-radius: var(--round);
     overflow: hidden;
+    background: #ccc;
     /* 라운드 안쪽 잘리게 */
-    background-size: contain;
 }
 
 /* ✅ 각 슬라이드(li)가 배경을 가지도록 */
 main .main_visual .slide_visual .swiper-slide {
+    width: 100%;
     height: 100%;
     position: relative;
     background-repeat: no-repeat;
@@ -425,9 +428,7 @@ main .main_visual .slide_visual .slide5 {
     background-image: url(../images/illiyoon_img5.png);
 }
 
-main .main_visual .slide_visual li {
-    position: relative;
-}
+
 
 main .main_visual .slide_visual .txt_area {
     padding: 50px 0 100px 100px;
@@ -638,7 +639,7 @@ main .main_visual .pager .btn_box .fa-play {
     flex: 1;
     background: url(../images/best1.png);
     transition: .3s;
- color: #fff;
+    color: #fff;
 }
 
 .article_bottom .box1 p {
@@ -759,9 +760,11 @@ main .main_visual .pager .btn_box .fa-play {
     margin-bottom: 30px;
     display: block;
 }
-.motion .tit img{
+
+.motion .tit img {
     width: 250px;
 }
+
 .motion .tit h2 {
     font-family: var(--font-Eng);
     font-weight: 400;
