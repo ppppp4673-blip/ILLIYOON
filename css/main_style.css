@@ -180,14 +180,26 @@ header .right {
 }
 
 a.af {
-    height: 40px;
-    font-size: 14px;
-    padding: 0 15px;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    gap: 5px;
+  height: 40px;
+  padding: 0 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  color: #6AB9FA;
+  background-color: #ffffff;
+
+  border: 2px solid #6AB9FA;
+  border-radius: 999px; /* 완전 둥근 캡슐 */
+
+  gap: 5px;
+  text-decoration: none;
+
+  box-sizing: border-box;
 }
 
 a.af::after {
@@ -201,7 +213,7 @@ header .right a {
 }
 
 header .right a:nth-child(1) {
-    background: #000;
+    background: #ffffff;
 }
 
 header.on .right a:nth-child(1) {
@@ -624,7 +636,7 @@ main .main_visual .pager .btn_box .fa-play {
 
 .article_bottom .box1 {
     flex: 1;
-    background: url(../images/image\ 16.png);
+    background: url(../images/best1.png);
     transition: .3s;
  color: #fff;
 }
@@ -744,14 +756,16 @@ main .main_visual .pager .btn_box .fa-play {
     font-weight: 600;
     font-size: 5rem;
     color: #ddd;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     display: block;
 }
-
+.motion .tit img{
+    width: 250px;
+}
 .motion .tit h2 {
     font-family: var(--font-Eng);
-    font-weight: 600;
-    font-size: 5rem;
+    font-weight: 400;
+    font-size: 1.75rem;
     color: #000;
     margin-bottom: 60px;
 }
